@@ -1,0 +1,10 @@
+This website uses Charity Advantage as a host. Charity Advantage uses it own content management system which doesn't allow for external css and js files to be linked in by users.
+They only give access to what is between a <div class="container"> </div>  which makes up the main body of the page. What I did was pick their own responsive pre-made them, took out all content and replaced it with my own using inline styling. The hosting company does not
+allow access to the head tags of the page and I know of know other way to force a linked external file like a stylesheet file or js file. So I just used inline
+css and put my js scripts at the bottom of my content. 
+
+This is still a work in process as of Feb 26th, 2017. However mostly what is left is to tweak and to see if I can do something with their integreated form on the contact page.
+The website is here:   www.cafeyouth.org
+
+Tyler B. 
+
