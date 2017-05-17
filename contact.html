@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+
+    <div class="1container">
+<div style="text-align:center;" class="row">
+<h4><strong>Administrative Office</strong></h4>
+<hr style="width: 25%; border: 1px solid black;" />
+<br />
+<div style="text-align:center;" class="col-sm-4">
+<h5><strong>Chief Executive Officer</strong></h5>
+<br />
+<p>Lorna Green: lgreen@cafeyouth.org</p>
+</div>
+<div class="col-sm-4">
+<h5><strong>Artistic Director</strong></h5>
+<br />
+<p>Josanne Francis: jfrancis@cafeyouth.org</p>
+</div>
+<div class="col-sm-4">
+<h5><strong>Director of Parent/Student Affairs &amp; Project Coordinator</strong> </h5>
+<p style="padding-top:5px;">Marlene Daniels: mdaniels@cafeyouth.org
+</p>
+</div>
+</div>
+<div class="row">
+<div style="text-align:center;margin-top:80px;" class="col-sm-12">
+<h4>Office Phone</h4>
+<p>240.667.2235
+</p>
+</div>
+</div>
+<div style="text-align:center;margin-top:80px;" class="row">
+<h4><strong>Locations</strong></h4>
+<div style="margin-top:80px;" class="col-sm-6">
+<address>
+<strong>Saturday Academy
+After School Academy</strong><br />
+Cultural Academy for Excellence<br />
+Queens Manor Gardens Apt. Complex<br />
+2705 Queens Chapel Road<br />
+(entrance at the rear on 30th &amp; Allison St)<br />
+Mt. Rainier, MD 20712
+</address>
+</div>
+<div style="margin-top:80px;" class="col-sm-6">
+<address>
+<strong>Adult Programs</strong><br />
+Orchestra Rehearsals (Pantones)<br />
+Steelpan Classes<br />
+CAF&#201;
+at Brookland<br />
+1423 Girard St, N.E.<br />
+Washington, DC 20017
+</address>
+</div>
+</div>
+</div>
+<table style="margin-top: 100px; margin-left: 130px;" border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tbody>
+         <tr>
+             <td valign="top">
+             <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                 <tbody>
+                     <tr>
+                         <td style="padding-top:20px" valign="top">
+<script src="js/GetResponse.js" type="text/javascript"></script><script language="javascript" type="text/javascript">
+String.prototype.replaceAll = function( token, newToken, ignoreCase ) {
+var _token;
+var str = this + "";
+var i = -1;
+if ( typeof token === "string" ) {
+if ( ignoreCase ) {
+_token = token.toLowerCase();
+while( (
+i = str.toLowerCase().indexOf(
+token, i >= 0 ? i + newToken.length : 0
+) ) !== -1
+) {
+str = str.substring( 0, i ) +
+newToken +
+str.substring( i + token.length );
+}
+} else {
+return this.split( token ).join( newToken );
+}
+}
+return str;
+};
+function SubmitForm() {
+                    var st_error = "";
+                      var flag = false;
+                          textbox01_var = document.getElementById("textbox01"); if (textbox01_var.value == "") {
+                             flag = true; st_error += "Name is required.\n";
+                          }
+                          textbox11_var = document.getElementById("textbox11"); if (textbox11_var.value == "") {
+                             flag = true; st_error += "Your e-mail address is required.\n";
+                          }
+                          textbox21_var = document.getElementById("textbox21"); if (textbox21_var.value == "") {
+                             flag = true; st_error += "Subject is required.\n";
+                          }
+                          textarea01_var = document.getElementById("textarea01"); if (textarea01_var.value == "") {
+                             flag = true; st_error += "Message is required.\n";
+                          }
+                    if (flag)
+                     {
+                         alert(st_error);
+                       }
+                       else
+                       {
+                    var st_ajax = "<img src='images/ajax-loader.gif' alt='' />";
+                    document.getElementById("div_loading_ajax").innerHTML = st_ajax;
+                     hdFormCodes = document.getElementById("hdFormCode").value;
+                      document.getElementById("messages").innerHTML = "";
+                       var param = "";
+                          textbox01_add_var = document.getElementById("textbox01");
+                       param += "&textbox01=" + textbox01_add_var.value;
+                          textbox11_add_var = document.getElementById("textbox11");
+                       param += "&textbox11=" + textbox11_add_var.value;
+                          textbox21_add_var = document.getElementById("textbox21");
+                       param += "&textbox21=" + textbox21_add_var.value;
+                          textarea01_add_var = document.getElementById("textarea01");
+                       param += "&textarea01=" + textarea01_add_var.value;
+                        var myDate = new Date();
+                          var session = myDate.getDay() + '' + myDate.getMonth() + '' + myDate.getYear() + '' + myDate.getHours() + '' + myDate.getMinutes() + '' + myDate.getSeconds();
+                         document.getElementById("hdSession").value = session;
+                      GetResponse('Contact_UsHandle.ashx?RequestType=def' + param + '&hdFormCode=' + hdFormCodes + '&session=' + session, showResult);
+                       }
+}
+                    function showResult(XML) {
+                    document.getElementById("div_loading_ajax").innerHTML = "";
+document.getElementById("tableadd").style.display = 'none';
+var is_chrome = navigator.userAgent.toLowerCase().indexOf('chrome') > -1;
+                    var safari = navigator.userAgent.toLowerCase().indexOf('safari') > -1;
+if (is_chrome == true || safari == true) {
+                    if (window.XMLHttpRequest) {
+                          xmlhttp = new XMLHttpRequest();
+                      } else {
+                          xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                      }
+                      var session = document.getElementById('hdSession').value;
+                      xmlhttp.open("GET", "form/" + session + ".xml", false);
+                      xmlhttp.send();
+                      xmlDoc = xmlhttp.responseXML;
+                       var x = xmlDoc.getElementsByTagName("customForm");
+                      var result = x[0].getElementsByTagName("result")[0].childNodes[0].nodeValue;
+                      if (result == "invalid") {
+                           document.getElementById("messages").innerHTML = "<span style='color:red'>The spam code you've entered is incorrect!</span> ";
+                         } else {
+                              var mess = x[0].getElementsByTagName("mess")[0].childNodes[0].nodeValue;
+                             var url = x[0].getElementsByTagName("url")[0].childNodes[0].nodeValue;
+                             if (result == "ok") {
+                    st = "" ;
+document.getElementById("messages").innerHTML = "<span style='color:blue'>"+mess+"</span>";
+                                } else if (result == "no") {
+                                   document.getElementById("messages").innerHTML = "<span style='color:red'>Your submission hasn't been sent !</span>";
+                               } else if (result == "nosend") {
+                                     document.getElementById("messages").innerHTML = "<span style='color:red'>Your submission hasn't been sent !</span>";
+                                }
+                               if (url != "1temp1") {
+                                   sleep(3000);
+                                }
+                             }
+}else{
+                     var data = "";
+                    var result = XML.getElementsByTagName('result');
+                    var mess = XML.getElementsByTagName('mess');
+                    var url = XML.getElementsByTagName('url');
+                    if (GetInnerTextCustom(result[0]) == "ok") {
+                        document.getElementById("messages").innerHTML = "<span style='color:blue'>"+GetInnerTextCustom(mess[0])+"</span>";
+                     } else if (GetInnerTextCustom(result[0]) == "no") {
+                         document.getElementById("messages").innerHTML = "<span style='color:red'>Your submission hasn't been sent !</span>";
+                     } else if (GetInnerTextCustom(result[0]) == "nosend") {
+                         document.getElementById("messages").innerHTML = "<span style='color:red'>Your submission hasn't been sent !</span>";
+}
+if (GetInnerTextCustom(url[0]) != "1temp1")
+                    {
+                        sleep(3000);
+var urltemp = GetInnerTextCustom(url[0]);
+urltemp = urltemp.replaceAll('{abc}','&');
+                        window.location = urltemp;
+                     }
+                      }
+}
+function GetInnerTextCustom(node) {
+                     return (node.textContent || node.innerText || node.text);
+}
+                    function sleep(milliseconds) {
+                          var start = new Date().getTime();
+                           for (var i = 0; i < 1e7; i++) {
+                          if ((new Date().getTime() - start) > milliseconds) {
+                          break;
+                            }
+                          }
+                         }
+                         </script><div align="center">
+<div>
+<div id="messages" style="color:black;font-weight:bold"></div>
+<table id="tableadd" border="0" cellpadding="0" cellspacing="0" width="100%">
+     <tbody>
+         <tr>
+             <td align="left" valign="top" width="25%">Name<span style="color:Red">*</span></td>
+             <td align="left" valign="top"><input id="textbox01" name="textbox01" style="width:250px" class="MANAGEWEBSITE_140" maxlength="255" type="text" /></td>
+         </tr>
+         <tr>
+             <td style="padding-top:10px" align="left" valign="top">Your e-mail address<span style="color:Red">*</span></td>
+             <td style="padding-top:10px" align="left" valign="top"><input id="textbox11" name="textbox11" style="width:250px" class="MANAGEWEBSITE_140" maxlength="255" type="text" /></td>
+         </tr>
+         <tr>
+             <td style="padding-top:10px" align="left" valign="top">Subject<span style="color:Red">*</span></td>
+             <td style="padding-top:10px" align="left" valign="top"><input id="textbox21" name="textbox21" style="width:250px" class="MANAGEWEBSITE_140" maxlength="255" type="text" /></td>
+         </tr>
+         <tr>
+             <td style="padding-top:10px" align="left" valign="top">Message<span style="color:Red">*</span></td>
+<td style="padding-top:10px" align="left" valign="top"><textarea cols="35" class="CommentMANAGEWEBSITE" rows="10" id="textarea01" name="textarea01" style="width:600px"></textarea></td>
+         </tr>
+         <tr>
+             <td align="left" valign="top"><input id="hdSession" name="hdSession" type="hidden" /> <input id="hdAction" name="hdAction" type="hidden" /> <input id="hdID" name="hdID" type="hidden" /> <input id="hdFormCode" name="hdFormCode" value="Contact_Us" type="hidden" /></td>
+             <td style="padding-top:10px" align="left" valign="top"><input name="button" class="buttonSearch" id="Submit" style="cursor:pointer;" onclick="return SubmitForm();" value="Submit" type="button"> <label> <input name="Reset" style="cursor:pointer;" value="Reset" class="buttonSearch" type="reset" /> </label>
+             <div id="div_loading_ajax"> </div>
+             </td>
+         </tr>
+     </tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+     <td height="40">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script><script> WebFont.load({
+google: {
+              families: ['Raleway', 'sans-serif']
+              }
+});
+              $('*').css('font-family', "Raleway");
+</script><script>
+$(function(){
+$('body').css('background-color', "white");
+             $('.left_content').css('background-color', '#F5F5F5 ');
+     $('*').css('font-size', '15px');
+});
+</script><br />
+
+                            </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </body>
+</html>
